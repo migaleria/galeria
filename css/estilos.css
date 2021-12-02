@@ -1,0 +1,32 @@
+body{
+     background-color:#f2f2f2;
+}
+.contenedorSombra{
+     background-color:#fff;
+    /* padding: 5px; */
+    max-width: 90%;
+    border-radius: 5px;
+    /* margin: 0 auto; */
+    /* border:transparent ; */
+    /* box-shadow: 10px 15px 15px #dcb9ef; */
+}
+.animar{
+    /* border: rgba(217, 47, 236, 1) 3px solid; */
+    box-shadow:20px 20px 30px #9333ec;
+}
+
+
+/* SEGUNDO GRUPO TARJETAS */
+.contenedores{
+    background-color:#fff;
+   /* padding: 5px; */
+   max-width: 90%;
+   border-radius: 5px;
+   /* margin: 0 auto; */
+   border:#08f34e solid 3px;
+   /* box-shadow: 10px 15px 15px #d4f568; */
+}
+.animar2{
+   border: rgb(73, 133, 34) 3px solid;
+   /* box-shadow:20px 20px 30px #9333ec; */
+}

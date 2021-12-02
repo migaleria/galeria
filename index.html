@@ -1,0 +1,478 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Mi Galeria</title>
+    <!-- CSS only -->
+    <link href="https://cdn.jsdelivr.net/npm/bootstrap@5.1.3/dist/css/bootstrap.min.css" rel="stylesheet" integrity="sha384-1BmE4kWBq78iYhFldvKuhfTAU6auU8tT94WrHftjDbrCEXSU1oBoqyl2QvZ6jIW3" crossorigin="anonymous">
+    <link rel="stylesheet" href="https://cdn.jsdelivr.net/npm/bootstrap-icons@1.7.1/font/bootstrap-icons.css">
+    <link href="css/estilos.css" rel="stylesheet"/>
+    
+    
+    <style>
+        header{
+            margin-top: -20px;
+            /* margin-left: 10px; */
+            background:url('img/00.png') no-repeat;
+            max-width: 100%;
+            height: 400px;
+            z-index: 2;
+            text-align: center;
+            display: flex;
+            flex-direction: column;
+        }
+        h1{
+            color:#fff;
+            font-size: 60px;
+            text-align: center;
+            align-items: center;
+            margin-top: 130px;
+        }
+       
+        .contenedor{
+            vertical-align: top;
+            position: relative;
+            /* background:#f04293; */
+            background: linear-gradient(217deg, rgb(230, 84, 235), rgba(226, 132, 132, 0) 70.71%);
+            /* linear-gradient(127deg, rgba(0,255,0,.8), rgba(0,255,0,0) 70.71%),
+            linear-gradient(336deg, rgba(0,0,255,.8), rgba(0,0,255,0) 70.71%);         */
+            width: 80%;
+            height: 250px;
+            margin-top: -35px;
+            z-index: 1;
+            border-radius: 10px;
+            box-shadow: rgb(160, 160, 161) 10px 15px 15px;
+        }
+        div .items{
+            display: flex;
+            flex-direction: column;            
+        }
+        .titulos{
+            font-size: 40px;
+            color:rgb(95, 3, 40);
+            font-weight: 500;
+            text-align: center;
+            justify-content: center;          
+        }
+        .negrita{
+            font-size: 22px;
+            color: #221e1e;
+        }
+        .descripcion{
+            font-size: 14px;
+            color: rgb(61, 7, 54);
+            font-weight: lighter;
+        }
+        .segundo{
+            padding-top: 10px;
+            background: linear-gradient(217deg, rgba(255,0,0,.8), rgba(255,0,0,0) 70.71%),
+            linear-gradient(127deg, rgba(0,255,0,.8), rgba(0,255,0,0) 70.71%),
+            linear-gradient(336deg, rgba(0,0,255,.8), rgba(0,0,255,0) 70.71%);
+            height: 600px;
+            /* width: 100%; */
+        }
+        footer{
+            background:url('img/00.png') no-repeat;
+            max-width: 100%;
+            height: 150px;
+            /* z-index: 2; */
+            text-align: center;
+            /* display:flex;
+            flex-direction: column; */
+        }
+        footer a{
+            text-decoration: none;
+        }
+    </style>
+   
+</head>
+
+<body>
+
+    <header>
+        <h1>Galeria virtual</h1>    
+     <!-- <img src="1.png" alt=""> -->
+    </header>
+
+    <!-- DIV FLOTANTE -->
+    <div class="container  contenedor mb-5">
+        <div class="row ">
+            <div class="col-4 items mt-5">
+                <p  class="titulos">Ofertas</p>
+                <p class="negrita text-center">Lorem ipsum dolor sit amet.</p>
+                <p class="descripcion text-justify">Lorem ipsum dolor sit amet
+                    - Lorem ipsum dolor sit amet..
+                </p>
+            </div>
+            <div class="col-4 items mt-5">
+                <p class="titulos">Niñas</p>
+                <p class="negrita text-center">Lorem ipsum dolor sit amet.</p>
+                <p class="descripcion text-justify">Lorem ipsum dolor sit amet
+                    - Lorem ipsum dolor sit amet..
+                </p>
+            </div>
+            <div class="col-4 items mt-5">
+                <p class="titulos">Verano 2021</p>
+                <p class="negrita text-center">Lorem ipsum dolor sit amet.</p>
+                <p class="descripcion text-justify">Lorem ipsum dolor sit amet
+                    - Lorem ipsum dolor sit amet.. Lorem ipsum dolor sit amet.
+                </p>
+            </div>
+        </div>
+    </div>
+
+ <!-- CARROUSELES -->
+    <div class="container mt-5 mb-5">
+    <!-- CARROUSELES 1 -->
+    <dis class="row">
+        <div class="col-3">
+            <div id="carouselExampleControls" class="carousel slide" data-bs-ride="carousel">
+                <div class="carousel-inner">
+                <div class="carousel-item active">
+                    <img src="img/04.jpg" class="d-block w-100" alt="...">
+                </div>
+                <div class="carousel-item">
+                    <img src="img/05.jpg" class="d-block w-100" alt="...">
+                </div>
+                <div class="carousel-item">
+                    <img src="img/07.jpg" class="d-block w-100" alt="...">
+                </div>
+                </div>
+                <button class="carousel-control-prev" type="button" data-bs-target="#carouselExampleControls" data-bs-slide="prev">
+                <span class="carousel-control-prev-icon" aria-hidden="true"></span>
+                <span class="visually-hidden">Previous</span>
+                </button>
+                <button class="carousel-control-next" type="button" data-bs-target="#carouselExampleControls" data-bs-slide="next">
+                <span class="carousel-control-next-icon" aria-hidden="true"></span>
+                <span class="visually-hidden">Next</span>
+                </button>
+            </div>
+        </div>
+        <!-- CARROUSELES 2 -->
+        <div class="col-3">
+            <div id="carouselExampleControls" class="carousel slide" data-bs-ride="carousel">
+                <div class="carousel-inner">
+                <div class="carousel-item active">
+                    <img src="img/07.jpg" class="d-block w-100" alt="...">
+                </div>
+                <div class="carousel-item">
+                    <img src="img/04.jpg" class="d-block w-100" alt="...">
+                </div>
+                <div class="carousel-item">
+                    <img src="img/05.jpg" class="d-block w-100" alt="...">
+                </div>
+                </div>
+                <button class="carousel-control-prev" type="button" data-bs-target="#carouselExampleControls" data-bs-slide="prev">
+                <span class="carousel-control-prev-icon" aria-hidden="true"></span>
+                <span class="visually-hidden">Previous</span>
+                </button>
+                <button class="carousel-control-next" type="button" data-bs-target="#carouselExampleControls" data-bs-slide="next">
+                <span class="carousel-control-next-icon" aria-hidden="true"></span>
+                <span class="visually-hidden">Next</span>
+                </button>
+            </div>
+        </div>
+        
+        <!-- CARROUSELES 3 -->
+        <div class="col-3">
+            <div id="carouselExampleControls" class="carousel slide" data-bs-ride="carousel">
+                <div class="carousel-inner">
+                <div class="carousel-item active">
+                    <img src="img/10.jpg" class="d-block w-100" alt="...">
+                </div>
+                <div class="carousel-item">
+                    <img src="img/11.jpg" class="d-block w-100" alt="...">
+                </div>
+                <div class="carousel-item">
+                    <img src="img/12.jpg" class="d-block w-100" alt="...">
+                </div>
+                </div>
+                <button class="carousel-control-prev" type="button" data-bs-target="#carouselExampleControls" data-bs-slide="prev">
+                <span class="carousel-control-prev-icon" aria-hidden="true"></span>
+                <span class="visually-hidden">Previous</span>
+                </button>
+                <button class="carousel-control-next" type="button" data-bs-target="#carouselExampleControls" data-bs-slide="next">
+                <span class="carousel-control-next-icon" aria-hidden="true"></span>
+                <span class="visually-hidden">Next</span>
+                </button>
+            </div>
+        </div>
+
+        <!-- CARROUSELES 4 -->
+        <div class="col-3">
+            <div id="carouselExampleControls" class="carousel slide" data-bs-ride="carousel">
+                <div class="carousel-inner">
+                <div class="carousel-item active">
+                    <img src="img/13.jpg" class="d-block w-100" alt="...">
+                </div>
+                <div class="carousel-item">
+                    <img src="img/14.jpg" class="d-block w-100" alt="...">
+                </div>
+                <div class="carousel-item">
+                    <img src="img/15.jpg" class="d-block w-100" alt="...">
+                </div>
+                </div>
+                <button class="carousel-control-prev" type="button" data-bs-target="#carouselExampleControls" data-bs-slide="prev">
+                <span class="carousel-control-prev-icon" aria-hidden="true"></span>
+                <span class="visually-hidden">Previous</span>
+                </button>
+                <button class="carousel-control-next" type="button" data-bs-target="#carouselExampleControls" data-bs-slide="next">
+                <span class="carousel-control-next-icon" aria-hidden="true"></span>
+                <span class="visually-hidden">Next</span>
+                </button>
+            </div>
+        </div>
+    </div>
+    </div>
+
+    <hr>
+
+    <!-- CARDS 1 -->
+    <div class="container mt-5 mb-5">
+        <div class="row">
+            <div class="col-3">
+                <div class="card" style="width: 16rem;">
+                    <img src="img/3.png" class="card-img-top" alt="...">
+                    <div class="card-body">
+                    <p class="card-text">Vestido de algodón con detalles y estampado de flores.
+                        fresco para ocasión casual y semi formal. Tallas M y L.
+                    </p>
+                    </div>
+                </div>
+            </div>
+            <div class="col-3">
+                <div class="card" style="width: 16rem;">
+                    <img src="img/2.png" class="card-img-top" alt="...">
+                    <div class="card-body">
+                    <p class="card-text">Some quick example text to build on
+                        the card title and make up the bulk of the card's content.
+                    </p>
+                    </div>
+                </div>
+            </div>
+            <div class="col-3">
+                <div class="card" style="width: 16rem;">
+                    <img src="img/3.png" class="card-img-top" alt="...">
+                    <div class="card-body">
+                    <p class="card-text">Some quick example text to build on
+                        the card title and make up the bulk of the card's content.
+                    </p>
+                    </div>
+                </div>
+            </div>
+            <div class="col-3">
+                <div class="card" style="width: 16rem;">
+                    <img src="img/2.png" class="card-img-top" alt="...">
+                    <div class="card-body">
+                    <p class="card-text">Some quick example text to build on
+                        the card title and make up the bulk of the card's content.
+                    </p>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </div>
+
+    <!-- CARDS 1.1 -->
+    <div class="container mt-5 mb-5">
+    <div class="row">
+        <div class="col-3">
+            <div class="card" style="width: 16rem;">
+                <img src="img/2.png" class="card-img-top" alt="...">
+                <div class="card-body">
+                    <p class="card-text">Vestido de algodón con detalles y estampado de flores.
+                        fresco para ocasión casual y semi formal. Tallas M y L.
+                    </p>
+                </div>
+            </div>
+        </div>
+        <div class="col-3">
+            <div class="card" style="width: 16rem;">
+                <img src="img/3.png" class="card-img-top" alt="...">
+                <div class="card-body">
+                    <p class="card-text">Some quick example text to build on
+                        the card title and make up the bulk of the card's content.
+                    </p>
+                </div>
+            </div>
+        </div>
+        <div class="col-3">
+            <div class="card" style="width: 16rem;">
+                <img src="img/2.png" class="card-img-top" alt="...">
+                <div class="card-body">
+                    <p class="card-text">Some quick example text to build on
+                        the card title and make up the bulk of the card's content.
+                    </p>
+                </div>
+            </div>
+        </div>
+        <div class="col-3">
+            <div class="card" style="width: 16rem;">
+                <img src="img/3.png" class="card-img-top" alt="...">
+                <div class="card-body">
+                    <p class="card-text">Some quick example text to build on
+                        the card title and make up the bulk of the card's content.
+                    </p>
+                </div>
+            </div>
+        </div>
+    </div>
+    </div>
+
+    <!-- CARDS 2 DIV DEGRADADO-->
+    <div class="segundo">
+    <div class="container  mt-5 mb-5 ">
+        <div class="row">
+            <div class="col-4">
+                <div class="card" style="width: 18rem;">
+                    <img src="img/2.png" class="card-img-top" alt="...">
+                    <div class="card-body">
+                        <p class="card-text">Vestido de algodón con detalles y estampado de flores.
+                            fresco para ocasión casual y semi formal. Tallas M y L.
+                        </p>
+                    </div>
+                </div>
+            </div>
+            <div class="col-4">
+                <div class="card" style="width: 18rem;">
+                    <img src="img/3.png" class="card-img-top" alt="...">
+                    <div class="card-body">
+                        <p class="card-text">Some quick example text to build on
+                            the card title and make up the bulk of the card's content.
+                        </p>
+                    </div>
+                </div>
+            </div>
+            <div class="col-4">
+                <div class="card" style="width: 18rem;">
+                    <img src="img/2.png" class="card-img-top" alt="...">
+                    <div class="card-body">
+                        <p class="card-text">Some quick example text to build on
+                            the card title and make up the bulk of the card's content.
+                        </p>
+                    </div>
+                </div>
+            </div>
+            
+        </div>
+    </div>
+    </div>
+
+   <hr>
+
+    <!-- 3 TARJETAS CON SOMBRA DE LUCES -->  
+    <div class="container mt-5 mb-5" >
+        <div class="row">
+            <div class="col-4" >
+                <div class=" card contenedorSombra"  style="width: 18rem;" id="contenedor1">
+                    <img src="img/01.jpg" class="card-img-top"  alt="..." >
+                    <div class="card-body">
+                    <p class="card-text text-justify">Some quick example text to build on the card title and make up the bulk of the card's content.</p>
+                    </div>
+                </div>
+            </div>
+            <div class="col-4">
+                <div class=" card contenedorSombra"  style="width: 18rem;" id="contenedor2">
+                    <img src="img/02.jpg" class="card-img-top" alt="..." >
+                    <div class="card-body">
+                      <p class="card-text text-justify">Some quick example text to build on the card title and make up the bulk of the card's content.</p>
+                    </div>
+                </div>
+            </div>
+            <div class="col-4">
+                <div class=" card contenedorSombra"  style="width: 18rem;" id="contenedor3">
+                    <img src="img/03.jpg" class="card-img-top" alt="..." >
+                    <div class="card-body">
+                      <p class="card-text text-justify">Some quick example text to build on the card title and make up the bulk of the card's content.</p>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </div>
+
+    <hr>
+    <hr>
+    <!-- 4 TARJETAS ILUMINADAS EN EL BORDE -->  
+    <div class="container mt-5" >
+        <div class="row">
+            <div class="col-3" >
+                <div class=" card contenedores"  style="width: 18rem;" id="contenedor4">
+                    <img src="img/04.jpg" class="card-img-top"  alt="..." >
+                    <div class="card-body">
+                    <p class="card-text text-justify">Some quick example text to build on the card title and make up the bulk of the card's content.</p>
+                    </div>
+                </div>
+            </div>
+            <div class="col-3">
+                <div class=" card contenedores"  style="width: 18rem;" id="contenedor5">
+                    <img src="img/05.jpg" class="card-img-top" alt="..." >
+                    <div class="card-body">
+                      <p class="card-text text-justify">Some quick example text to build on the card title and make up the bulk of the card's content.</p>
+                    </div>
+                </div>
+            </div>
+            <div class="col-3">
+                <div class=" card contenedores"  style="width: 18rem;" id="contenedor6">
+                    <img src="img/06.jpg" class="card-img-top" alt="..." >
+                    <div class="card-body">
+                      <p class="card-text text-justify">Some quick example text to build on the card title and make up the bulk of the card's content.</p>
+                    </div>
+                </div>
+            </div>
+            <div class="col-3">
+                <div class=" card contenedores"  style="width: 18rem;" id="contenedor7">
+                    <img src="img/07.jpg" class="card-img-top" alt="..." >
+                    <div class="card-body">
+                      <p class="card-text text-justify">Some quick example text to build on the card title and make up the bulk of the card's content.</p>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </div>
+
+
+    <hr>
+    <hr>
+
+    <!-- 2 TARJETAS GRANDES -->     
+    <div class="container mt-5" >
+        <div class="row">
+            <div class="col-6" >
+                <div class=" card contenedorSombra"  style="width: 36rem;" id="contenedor1">
+                    <img src="img/08.jpg" class="card-img-top"  alt="..." >
+                    <div class="card-body">
+                    <p class="card-text text-justify">Some quick example text to build on the card title and make up the bulk of the card's content.</p>
+                    </div>
+                </div>
+            </div>
+            
+            <div class="col-6">
+                <div class=" card contenedorSombra"  style="width: 36rem;" id="contenedor3">
+                    <img src="img/09.jpg" class="card-img-top" alt="..." >
+                    <div class="card-body">
+                      <p class="card-text text-justify">Some quick example text to build on the card title and make up the bulk of the card's content.</p>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </div>
+   
+    <hr>
+ 
+
+    <footer> <h3 class="mt-5 pt-3 text-center text-white">Síguenos en las redes sociales</h3> 
+        <a href=""><i class="bi bi-twitter text-white px-1"></i></a> 
+        <a href=""><i class="bi bi-tiktok text-white px-1"></i></a>
+        <a href=""> <i class="bi bi-instagram text-white px-1"></i> </a>
+         <a href=""><i class="bi bi-facebook text-white px-1"></i></a>
+         <a href=""><i class="bi bi-youtube text-white px-1"></i></a>
+     </footer>
+
+    <script src="js/main.js"></script>  
+    
+    <!-- JavaScript Bundle with Popper -->
+    <script src="https://cdn.jsdelivr.net/npm/bootstrap@5.1.3/dist/js/bootstrap.bundle.min.js" integrity="sha384-ka7Sk0Gln4gmtz2MlQnikT1wXgYsOg+OMhuP+IlRH9sENBO0LRn5q+8nbTov4+1p" crossorigin="anonymous"></script>
+</body>
+</html>
